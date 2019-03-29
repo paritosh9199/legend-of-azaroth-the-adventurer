@@ -1,0 +1,17 @@
+{
+  "name": "the-legend-of-giza",
+  "version": "0.0.1",
+  "description": "The most awesome roguelike rpg adventure game of the century",
+  "main": "app.js",
+  "scripts": {
+    "test": "node *-test.js"
+  },
+  "author": "Paritosh, Afzal",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

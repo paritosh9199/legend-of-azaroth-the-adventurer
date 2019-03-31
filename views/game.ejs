@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My awesome Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/protocol.css">
+    <link rel="stylesheet" href="css/protocol-extra.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/gameStyle.css">
+    <!-- <script src="main.js"></script> -->
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <div id="gameDisp">
+
+            <div id="game-menu">
+                <h1>THE LEGEND OF AZROTH</h1>
+                <div class="game-buttons">
+                    <button id="new-game-btn" class="mzp-c-button mzp-t-secondary mzp-t-small mb-3">
+                        New Game
+                    </button> <br>
+                    <!-- <button id="continue-game-btn" class="mzp-c-button mzp-t-secondary mzp-t-small mb-3">
+                        Continue Game
+                    </button> <br> -->
+                    <button id="music-toggle" class="mzp-c-button mzp-t-secondary mzp-t-small mb-3">
+                        Music: off
+                    </button> <br>
+                    <button id="help-btn" class="mzp-c-button mzp-t-secondary mzp-t-small mb-3">
+                        Help
+                    </button> <br>
+                    <button id="quit-btn" class="mzp-c-button mzp-t-secondary mzp-t-small mb-3">
+                        Quit
+                    </button>
+                </div>
+            </div>
+
+            <div id="game-map">
+                <!-- this is gam map -->
+                <!-- <h1>THE WORLD</h1> -->
+                <div id="playerStats">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            HP: <span class="hp-disp">[===========]</span>
+                            MP: <span class="mp-disp">[===========]</span>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <!-- <hr> -->
+                <div id="gameWorld">
+
+                </div>
+                <!-- <hr> -->
+                <div id="gameControl">
+
+                </div>
+            </div>
+
+            
+            <div id="score-menu">
+                score menu
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        document.getElementById('game-map').style.display = "none";
+        document.getElementById('score-menu').style.display = "none";
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/ui_manager.js"></script>
+    <script src="js/game.js"></script>
 </body>
+
 </html>

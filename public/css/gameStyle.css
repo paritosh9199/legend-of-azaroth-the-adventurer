@@ -1,0 +1,69 @@
+#gameDisp {
+    /* height: 100vh !important; */
+    text-align: center;
+    margin-top: 13%;
+    /* width:100vw !important; */
+    /* background: blue; */
+}
+
+.container {
+    height: 100%;
+}
+
+.game-buttons .mzp-c-button {
+    width: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    #gameDisp {
+        margin-top: 40% !important;
+    }
+}
+
+#gameWorld {
+    /* text-align:; */
+    /* text-align: justify; */
+    /* overflow: hidden; */
+    /* width: 100%;
+    max-width: 600px; */
+    /* line-height: 5px; */
+    display: grid;
+    grid-template-columns: repeat(35, 1fr);
+    /* grid-gap: 4px; */
+}
+
+.tree-tile {
+    color: rgb(0, 128, 0);
+    /* margin: 4px; */
+}
+
+.bush-tile {
+    color: rgb(235, 207, 81);
+    /* margin: 4px; */
+}
+
+.swamp-tile {
+    color: rgb(165, 42, 42);
+    /* margin: 4px; */
+}
+
+.barren-tile {
+    color: rgb(122, 76, 43);
+    /* margin: 4px; */
+}
+
+.grass-tile {
+    color: rgb(0, 128, 0);
+}
+
+/* .hex-xode{
+    color: #3ae8b0;
+} */
+
+.tree-tile, .bush-tile, .swamp-tile, .barren-tile, .grass-tile {
+    /* line-height: 0%; */
+    font-size: 14px;
+    /* width: 50ch; */
+    text-align: center;
+    
+}
